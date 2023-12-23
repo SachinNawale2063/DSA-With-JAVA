@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.ArrayList;
+
 public class Main {
     
     public static void main(String[] args) {
@@ -24,8 +27,27 @@ public class Main {
 
         System.out.println(s1.charAt(5));
         //It print character at index 5 in string s1
+
+        System.out.println(new int[] {1,2,3,4,5});
+        System.out.println(Arrays.toString(new int[] {1,2,3,4,5}));
         
-        
+        System.out.printf("my name is %s and my sap id is %s \n","Sachin", "60009210052");
+
+        System.out.println('a' + 'b'); //195
+        System.out.println("a" + "b"); //ab
+        System.out.println('a' + 3); //100
+        System.out.println((char)('a' + 3)); //d
+        System.out.println("a" + 1); //a1
+        System.out.println("Sachin" + new ArrayList<>()); //Sachin[]
+
+
+        StringBuilder builder = new StringBuilder();
+        for(int i = 0; i<26; i++) {
+            char ch = (char)('a'+i);
+            builder.append(ch);
+        }
+        System.out.println(builder); //abcdefghijklmnopqrstuwxyz
+
 
     }
 }
@@ -39,3 +61,8 @@ public class Main {
 
 
 // command line arguments are store in the String[] args
+
+// In Java Operator Overloading is not supported like other languages that is css, python
+
+
+// string builder make one object and whatever changes we done that can affect only on that new one object, no other object has been created like normal string method in java
